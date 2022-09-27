@@ -1,0 +1,25 @@
+ALGORITHM analyze_sentence
+VAR
+    c: CHAR;
+    num_c: INTEGER :=0;
+    num_word: INTEGER :=0;
+    num_vowels: INTEGER :=0;
+
+BEGIN
+    REPEAT
+        Read(c); // read c until c = "."
+        num_c := num_c + 1; // count characters: add 1 until c = "."
+
+        IF ((c = " ") OR (c = ".")) THEN // count words: add 1 when c = " "
+            num_word := num_word + 1;
+        END_IF
+
+        IF (C IN ["A", "E", "I", "O", "U", "Y", "W", "a", "e", "i", "o", "u", "y", "w"]) THEN
+            num_vowels := num_vowels + 1; // count vowels: add 1 when c <= vowels
+        END_IF
+
+    UNTIL (c = ".")
+        Write("the number of characters = ", num_c);
+        Write("the number of words = ", num_word);
+        Write("the number of vowels = ", num_vowels);
+END
