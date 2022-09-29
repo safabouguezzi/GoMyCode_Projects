@@ -1,0 +1,42 @@
+ALGORITHM first_solution_prob1
+VAR
+    arr1: ARRAY_OF INTEGER[5];
+    arr2: ARRAY_OF INTEGER[5];
+    sum : INTEGER  :=0;
+    i,j: INTEGER ;
+
+BEGIN
+    Read(arr1);
+    Read(arr2);
+    
+	/*in this two for loops we will search for each 
+	element of arr1 in arr2. If we don't found the 
+    element in arr2, we'll add it to the sum */
+
+    FOR i FROM 0 TO arr1.length-1 STEP 1  DO
+        FOR j FROM 0 TO arr2.length-1 STEP 1 DO
+            IF (arr1[i]=arr2[j]) THEN
+                BREAK;
+            ELSE 
+                sum := sum + arr1[i];
+            END_IF
+        END_FOR
+    END_FOR
+
+	/* In this two for loops we will search for each 
+	element of arr2 in arr1. If we don't found the 
+    element in arr1, we'll add it to the sum */
+
+    FOR i FROM 0 TO arr2.length-1 STEP 1  DO
+        FOR j FROM 0 TO arr1.length-1 STEP 1 DO
+            IF (arr2[i]=arr1[j]) THEN
+                BREAK;
+            ELSE 
+                sum := sum + arr2[i];
+            END_IF
+        END_FOR
+    END_FOR
+
+    Write("Here's the sum of different elements from two sets:", sum);
+
+END

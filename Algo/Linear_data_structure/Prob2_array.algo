@@ -1,0 +1,31 @@
+ALGORITHM first_solution_prob2
+VAR
+    arr1: ARRAY_OF INTEGER[5];
+    arr2: ARRAY_OF INTEGER[5];
+    sum : INTEGER  :=0;
+    i,j: INTEGER ;
+
+BEGIN
+    Read(arr1);
+    Read(arr2);
+    
+	/*in this two for loops we will search for each 
+	element of arr1 in arr2. 
+    The elements in each set are unique or 
+    there are no duplicates within a set. 
+    So, If we found the element in arr2,
+    we'll just add the sum of the multiplication of 
+    the founded element by 2 */
+
+    FOR i FROM 0 TO arr1.length-1 STEP 1  DO
+        FOR j FROM 0 TO arr2.length-1 STEP 1 DO
+            IF (arr1[i]=arr2[j]) THEN
+                sum := sum + arr1[i] * 2;
+                BREAK;
+            END_IF
+        END_FOR
+    END_FOR
+
+    Write("Here's the sum of all overlapping elements ::", sum);
+
+END
