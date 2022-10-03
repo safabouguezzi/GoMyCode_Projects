@@ -1,0 +1,58 @@
+ALGORITHM InsertionSort
+VAR
+    arr: ARRAY_OF INTEGER[5]:= [5, 2, 9, 8, 1];
+    key, i, j : INTEGER;
+    n: INTEGER:= arr.length-1;
+BEGIN
+    FOR i FROM 1 TO n DO
+        key = arr[i];
+        j = i-1;
+        WHILE (j >=0 and arr[j]> key) DO
+            arr[j+1] = arr[j];
+            j = j-1;
+        END_WHILE
+        arr[j+1] = key;
+    END_FOR
+    Write(arr);
+END
+
+/*
+INPUT: arr = [5, 2, 9, 8, 1]
+OUTPUT:
+
+STEP 1:
+i = 1; key = arr[1] = 2 ; 
+(j=0 => j >= 0 and arr[0]=5 > 2)
+arr = [5, 5, 9, 8, 1] ; j = j-1 => j= -1 < 0; => quit while
+(arr[j+1] = arr[0]) = (key = 2)
+=> arr = [2, 5, 9, 8, 1]
+
+STEP 2:
+i = 2; key = arr[2] = 9 ; arr[1]= 5 < 9 => Good
+(arr[j+1] = arr[2]) = (key = 9)
+arr = [2, 5, 9, 8, 1]
+
+STEP 3:
+i = 3; key = arr[3] = 8 ; 
+(j=2 => j >= 0 and arr[2]= 9 > 8)
+arr = [2, 5, 9, 9, 1] ; j = j-1 => j= 1; 
+(j=1 => j >= 0 and arr[1]= 5 < 8) => quit While
+(arr[j+1] = arr[2]) = (key = 8)
+=> arr = [2, 5, 8, 9, 1]
+
+STEP 4:
+i = 4; key = arr[4] = 1 ; 
+(j=3 => j >= 0 and arr[3]= 9 > 1)
+arr = [2, 5, 8, 9, 9] ; j = j-1 => j= 2; 
+(j=2 => j >= 0 and arr[2]= 8 > 1) 
+arr = [2, 5, 8, 8, 9] ; j = j-1 => j= 1; 
+(j=1 => j >= 0 and arr[1]= 5 > 1) 
+arr = [2, 5, 5, 8, 9] ; j = j-1 => j= 0; 
+(j=0 => j >= 0 and arr[0]= 2 > 1) 
+arr = [2, 2, 5, 8, 9] ; j = j-1 => j= -1 < 0; => quit while
+(arr[j+1] = arr[0]) = (key = 1)
+=> arr = [1, 2, 5, 8, 9]
+
+OUTPUT: arr = [1, 2, 5, 8, 9]
+
+*/
