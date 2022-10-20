@@ -1,4 +1,4 @@
-[<p><img align="center" width="100%" src="./screenshot.PNG" alt="" /></p>]
+<p><img align="center" width="100%" src="./screenshot.PNG" alt="" /></p>
 
 
 

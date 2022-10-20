@@ -3,6 +3,7 @@
 
 import React from 'react'
 import profileImage from "../images/profileImg.jpg"
+import PropTypes from "prop-types"
 
 let bioSafa = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, illo veritatis totam omnis voluptatem expedita beatae. Ullam ipsum, facere inventore magni velit ad molestiae aperiam numquam repellendus laudantium maxime vel.
 Quidem aspernatur aperiam alias eligendi autem molestias sint, impedit, ex minus obcaecati quisquam repellat nostrum aliquid consequatur adipisci libero voluptatibus officia, veniam dignissimos ea nulla facilis odio vel! Facilis, officiis.
@@ -17,7 +18,7 @@ profession = "Web developer." , children = profileImage , handleName
     };
   return (
       <div style={{ padding: 20, backgroundColor: "#0A192F" }}>
-          <div style={{ padding: 15, borderRadius: 10, display: "flex", flexDirection: "row", gap: 20 }}>
+          <div style={{margin:20, padding: "20 0 20 0", borderRadius: 10, display: "flex", flexDirection: "row", gap: 20 }}>
               {handleName()}
 
               <div style={{ border: "solid 2px #64FFDA", display: "block", top: 20, left: 20, zIndex: 3 }}>
@@ -33,12 +34,18 @@ profession = "Web developer." , children = profileImage , handleName
                   <div style={{ marginTop: 20, color: "#8892b0", textAlign: "justify", lineHeight: "1.3", fontFamily: "wotfardRegularWebfont", fontSize: 20 }}>{bio}</div>
 
               </div>
-
           </div>
       </div>
   )
-};
+}
 
+Profile.propsTypes = {
+    fullName: PropTypes.string.isRequired,
+    bio: PropTypes.string.isRequired,
+    profession: PropTypes.string.isRequired,
+    children: PropTypes.string.isRequired,
+    handelName: PropTypes.func.isRequired
+};
 
 export default Profile
 
