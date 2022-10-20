@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: "wotfardRegularWebfont";
+  src: local("wotfardRegularWebfont"),
+   url("./fonts/Wotfard_Regular/Wotfard_Regular_Webfont/Wotfard-Regular-webfont/wotfard-regular-webfont.ttf") format("truetype");
+  font-weight: bold;
+  }
