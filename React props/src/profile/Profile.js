@@ -47,7 +47,7 @@ Profile.defaultProps = {
 };
 
 
-Profile.propsTypes = {
+Profile.propTypes = {
     fullName: PropTypes.string.isRequired,
     bio: PropTypes.string.isRequired,
     profession: PropTypes.string.isRequired,
