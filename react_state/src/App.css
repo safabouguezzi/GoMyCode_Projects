@@ -1,0 +1,43 @@
+:root {
+  --clr : #d264b6;
+  --base-color : #ECDCCD; /* #1D3557; */
+  --color-btn: #1D3557 ;/* #A2D2FF */
+  --color-shadow2: #A2D2FF ;/* #A2D2FF */
+
+}
+
+.App {
+  text-align: center; 
+  min-height: 100vh;
+  background: linear-gradient( #bde0fe , #ffc8dd );
+  }
+
+.App-header {
+  padding: 50px;
+}
+
+  .clickMe {
+    /* position: relative; */
+    /* display: block; */
+    color: var(--color-btn);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: bubble;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0 0 2px var(--color-shadow2);
+    border: 3px solid var(--base-color);
+    border-color: var(--clr);
+
+    /* background-color: var(--clr); */
+  }
+
+.clickMe:hover {
+cursor: pointer;
+/* background: var(--clr); */
+box-shadow: 0 0 35px var(--clr);
+}

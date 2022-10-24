@@ -1,0 +1,83 @@
+
+
+    
+    @font-face {
+      font-family: kiti;
+      src: url("./fonts/KINKIE__.TTF");
+    }
+    @font-face {
+      font-family: wild;
+      src: url("./fonts/EDBWT___.TTF");
+    }
+    @font-face {
+      font-family: candy;
+      src: url("./fonts/EmilysCandy-Regular.ttf");
+    }
+    @font-face {
+      font-family: bubble;
+      src: url("./fonts/BubblegumSans-Regular.ttf");
+    }
+    @font-face {
+      font-family: amesterdam;
+      src: url("./fonts/Amsterdam\ Personal\ Use.ttf");
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      background-color: #a2d2ff;
+      box-shadow: 0px 6px 0px #d264b6; /* 1D3557;; */
+      height: 295px;
+      width: 400px;
+      border-radius: 10px;
+      margin: 30px 10px;
+      padding: 20px;
+    }
+    
+    .myimg {
+      width: 180px;
+      border-radius: 50%;
+    }
+    
+    .name {
+      margin: 0px;
+      color: #1D3557;
+      font-family: bubble;
+      font-size: 32px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    
+    .myProfession {
+      margin-top: 10px;
+      color: #1D3557;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+    
+    .myBio {
+      font-family: 'Times New Roman', Times, serif;
+      color: #1D3557;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+    
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+      }
+    }
+    
