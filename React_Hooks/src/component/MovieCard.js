@@ -10,7 +10,7 @@ const MovieCard = ({ movie }) => {
         className="movieCard"
         style={{
           width: "calc(85vw/3)",
-          height: "850px",
+          height: "750px",
           display: "flex",
           justifyContent: "space-between",
         }}
@@ -22,16 +22,16 @@ const MovieCard = ({ movie }) => {
             src={movie.image}
           />
           <Card.Body>
-            <Card.Title style={{ color: "#FF8C00", fontWeight: "bold" }}>
+            <Card.Title style={{ color: "#025275", fontWeight: "bold" }}>
               {movie.name}{" "}
             </Card.Title>
             {/* I used React Simple Rating package from https://www.npmjs.com/package/react-simple-star-rating */}
             <Rating initialValue={movie.rate} readonly={true} />
-            <Card.Title style={{ color: "#FF8C00", fontWeight: "bold" }}>
+            <Card.Title style={{ color: "#025275", fontWeight: "bold" }}>
               {movie.year}{" "}
             </Card.Title>
             <Card.Text>{movie.description}</Card.Text>
-            <Card.Title style={{ color: "#FF8C00", fontWeight: "bold" }}>
+            <Card.Title style={{ color: "#025275", fontWeight: "bold" }}>
               {movie.type}{" "}
             </Card.Title>
           </Card.Body>
