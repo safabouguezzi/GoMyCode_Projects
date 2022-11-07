@@ -1,0 +1,142 @@
+.movieCard {
+    border-radius: 10; 
+    overflow:"hidden"; 
+    box-shadow: 0px 0px 8px #032541;
+    width: calc(85vw/3); 
+    height:870px !important;
+    margin: 30px auto;
+    display: "flex";
+    justify-content: "space-between"
+} 
+
+/* Card {
+    width: calc(85vw/3); 
+    height:670px ;  
+} */
+ .movieCard:hover {
+    transform: scale(1.08);
+}
+
+.imageCard {
+    height: calc(100vh/2);
+    width: calc(85vw/3);
+}
+
+.myApp {
+    display : grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    gap: 20px;
+}
+
+@media screen and (max-width: 950px){
+    .myApp {
+        grid-template-columns:repeat(2, auto);
+    } 
+
+    .movieCard {
+        border-radius: 10; 
+        overflow:"hidden"; 
+        box-shadow: 0px 0px 8px #032541;
+        width: calc(90vw/2); 
+        margin: 30px auto;
+    } 
+
+    .imageCard {
+        width: calc(90vw/2);
+    }
+
+    .addButton {
+        margin: 8px auto !important;
+        width: 5vw !important;
+        height: 3vw !important;
+        
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        color: #032541;
+        font-size: 1.1em !important;
+        font-weight: bolder;
+    }
+}
+@media screen and (max-width: 540px){
+    .myApp {
+        grid-template-columns:none;
+    } 
+
+    .movieCard {
+        border-radius: 10; 
+        overflow:"hidden"; 
+        box-shadow: 0px 0px 8px #032541;
+        width: calc(90vw); 
+        margin: 30px auto;
+    } 
+
+    .imageCard {
+        width: calc(90vw);
+    }
+}
+
+
+/* ############################################################### */
+
+/* style description page */
+
+
+
+.description{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 40px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 30px;
+}
+
+.description> h1{
+    color: #032541;
+    font-weight: bold;
+}
+
+
+
+.movieDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;    
+}
+
+.movieDescription>.text{
+    padding: 60px;
+    text-align: left;
+    height:20px;
+    font-size: 24px;
+
+}
+
+.text>h1 {
+    color: white;
+    background-color: #E50914;
+    padding: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+.text> .desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    padding-left: 10px;
+    text-align: justify;
+    background-color: #032541;
+    color: white;
+    padding: 30px;
+}
+.movieDescription>.trailer{
+    
+    margin-right: 75px;
+}
+
+
