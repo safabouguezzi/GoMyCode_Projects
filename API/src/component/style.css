@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #3A96DD;
+    --bg-color: #E6E5E5;
+}
+
+html , .App {
+    background-color: var(--bg-color);
+}
+
+.accordion{
+    text-align: justify;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    /* border: 2px solid saddlebrown; */
+    }
+
+.displayHeader, .displayBody{
+    text-align: justify;
+    box-shadow: -5px 0px 0px var(--primary-color);
+    border-radius: 10px;
+}
+
+.displayHeader  div{
+    text-align: justify;
+}
+.usersList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+h1{
+    color: var(--primary-color);
+    padding: 2%;
+    text-align: center;
+  }
+
+     /* ############### Style for Pagination ############# */
+
+     .paginationBttns {
+        /* width: 90%; */
+        margin: 0px;
+        padding: 0px;
+        height: 40px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        color: var(--primary-color);
+      }
+      
+      .paginationBttns a {
+        padding: 10px;
+        margin: 8px;
+        border-radius: 5px;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      
+      .paginationBttns a:hover {
+        color: white !important;
+        background-color: var(--primary-color);
+      }
+      
+      .paginationActive a {
+        color: white !important;
+        background-color: var(--primary-color);
+      }
+      
+
+      .paginationDisabled a {
+        color: var(--primary-color);
+        background-color: var(--bg-color);
+        border-color: var(--bg-color) ;
+        cursor: default;
+      }
+
+      .paginationDisabled a:hover {
+        color: var(--primary-color) !important;
+        background-color: var(--bg-color);
+      }
