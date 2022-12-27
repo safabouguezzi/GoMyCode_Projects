@@ -1,0 +1,15 @@
+.section__description {
+    color: var(--gray-text-description-color)
+}
+
+.about__section-item {
+    column-gap: 3rem;
+
+    p {
+
+        i {
+            color: var(--secondary-color);
+            font-style: 1.1rem;
+        }
+    }
+}

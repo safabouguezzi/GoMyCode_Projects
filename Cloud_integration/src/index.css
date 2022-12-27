@@ -1,0 +1,111 @@
+/* ======= set variables ========= */
+:root {
+    --primary-color: #05054c;
+    --btn-color: #000c6bd0;
+    --bg-search-color: #02083be9;
+    --border-search-color: #7c8a972f;
+    --secondary-color: #f9a826;
+    --gray-text-color: #7c8a97;
+    --gray-text-description-color: #70757b;
+    --gray-color: rgb(255, 255, 255, 0.715) /* #7c8a97 */;
+    --white-color: #fff;
+
+    --slider-1-img: linear-gradient(rgba(204, 208, 240, 0.5), rgba(204, 208, 240, 0.5)), url('./assets/all-images/slider-img/slider-1.jpg');
+    --slider-2-img: linear-gradient(rgba(204, 208, 240, 0.5), rgba(204, 208, 240, 0.5)), url('./assets/all-images/slider-img/slider-2.jpg');
+    --slider-3-img: linear-gradient(rgba(204, 208, 240, 0.5), rgba(204, 208, 240, 0.5)), url('./assets/all-images/slider-img/slider-3.jpg');
+
+
+}
+
+/* ======= google fonts ========= */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/*========= base style ========= */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Source Sans Pro", sans-serif;
+}
+
+/*========= pre-define css ========= */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+h3, h4 {
+    font-size: 1.8rem;
+}
+
+h5, h6 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: unset;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+.section__title {
+color: var(--primary-color);
+font-weight: 600;
+font-size: 2rem;
+}
+
+.section__subtitle {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    }
+
+.section__description {
+    color: var(--gray-color);
+    font-size: .9rem;
+    line-height: 30px;
+    }
+
+section {
+    padding: 50px 0px;
+    }
+
+.btn {
+    padding: 7px 15px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* .btn:hover {
+    background: var(--white-color) !important;
+    color : var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    font-weight: 600;
+} */
+
+@media only screen and (max-width:768px) {
+    section {
+        padding: 30px 0px;
+    }
+
+    .section__title {
+        font-size: 1.6rem;
+    }
+
+    .section__subtitle {
+        font-size: 1.1rem;
+    }
+}
